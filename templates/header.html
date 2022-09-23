@@ -36,16 +36,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav  ms-auto mx-auto" aria-labelledby="navbarDropdown">
           <li class="nav-item">
-            <a class="nav-link " href=""><h2>Home</h2></a>
+            <a class="nav-link " href="{{url_for('home')}}"><h2>Home</h2></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href=""><h2>About</h2></a>
+            <a class="nav-link" href="{{'about')}}"><h2>About</h2></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href=""><h2>Become a Model</h2></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href=""><h2>Contact Us</h2></a>
+            <a class="nav-link" href="{{url_for('contact')}}"><h2>Contact Us</h2></a>
           </li>
         </ul>
       </div>
