@@ -1,0 +1,100 @@
+body{
+    background-color :rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+h2{
+    color: rgb(0, 0, 0);
+}
+
+
+/* Navbrand */
+
+.status{
+    position: absolute;
+    top: 19rem;
+    width: 100%;
+    margin: 2% 3% ;
+    padding:1rem .5rem;
+}
+h3 .status {
+    word-spacing: 10%;
+}
+.navbar-brand{
+    margin-right: 0;
+}
+
+.navbar-brand img{
+    width: 360px;
+}
+
+@media screen and (min-width:992px) {
+    /* .navbar .container-fluid{
+        flex-direction: column;
+    } */
+
+    .navbar .navbar-nav .nav-item{
+        padding: .5rem .5rem;
+    }
+}
+
+.navbar .navbar-nav .nav-link{
+    color: black;
+    font-size: 0.8rem;
+}
+
+.menu{
+    width: 100%;
+    border-top: 2px solid rgba(46, 41, 41, 0.253);
+    border-bottom: 2px solid rgba(46, 41, 41, 0.253);
+    margin-top: .5rem ;
+}
+
+/* carousel of achievement */
+#achievements{
+    background-color: black;
+    padding: 3% auto 10% auto;
+}
+
+.second{
+    color: black;
+}
+
+.third {
+    color: rgb(255, 253, 253);
+    font-size: 10rem;
+}
+/* for the carousel-item image */
+.carousel-item img{
+    width: 100%;
+    /*width: 720px; /*change the size of the image*/
+    /* position: relative;
+    left: 360;change the position of the image */
+}
+
+img{
+    vertical-align: auto;
+    box-sizing: border-box;
+}
+/* call for model */
+.model-call{
+    margin-top: auto;
+    height: 768px;
+    background-image:url(angelina_jolie_maleficent-1366x768.jpg);
+}
+
+.social{
+    margin: 3%  auto 3% auto;
+    
+}
+
+.social i {
+    color: rgb(5, 4, 4);
+    padding: 0 3% 0 3%;
+}
+
+.social i:hover{
+    color: rgb(238, 204, 9);
+}
