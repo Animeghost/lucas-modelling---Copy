@@ -3,36 +3,45 @@
    <!-- carousel of models  -->
 <section id="achievements">
   <div id="carouselExampleControls" class="carousel " data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img  src="{{url_for('static',filename='img/LMH.jpg')}}" class="d-block " alt="...">
-        <div class="carousel-caption ">
-          <h1>
-            Becoming the best model you can
-          </h1>
-        </div>
+    <div class="carousel-inner ">
+      <div class="carousel-item active container">
+        <div class="carouselImage row">
+          <div class="col-7">
+            <img  src="{{url_for('static',filename='img/LMH.jpg')}}" class="d-block " alt="...">
+          </div>
+          <div class="col-5">
+            <img src="{{url_for('static',filename='img/_MG_3269.jpg')}}" alt="">
+          </div>
       </div>
-      <div class="carousel-item">
-        <img src="{{url_for('static',filename='img/black_culture.jpg')}}" class="d-block " alt="...">
-        <div class="carousel-caption second">
-          <h1>
-              For the Couture
-          </h1>
-        </div>
       </div>
       <div class="carousel-item container">
         <div class="carouselImage row">
-          <div class="col">
+          <div class="col-7">
+        <img src="{{url_for('static',filename='img/black_culture.jpg')}}" class="d-block faultless" alt="...">
+          </div>
+          <div class="col-5">
+            <img src="{{url_for('static',filename='img/Black_girl.jpg')}}"  alt="...">
+          </div>
+        </div>
+        <!-- <div class="carousel-caption second">
+          <h1>
+              For the Couture
+          </h1>
+        </div> -->
+      </div>
+      <div class="carousel-item container">
+        <div class="carouselImage row">
+          <div class="col-7">
             <img src="{{url_for('static',filename='img/lucas_grad.jpg')}}"  alt="...">
           </div>
-          <div class="col">
+          <div class="col-5 nti">
         <img src="{{url_for('static',filename='img/ntishor.jpg')}}"  alt="...">
         </div>
         </div>
        
         <div class="carousel-caption ">
           <h1 >
-            Let help you be the best model you can be
+            <!-- Let help you be the best model you can be -->
           </h1>
         </div>
       </div>
@@ -51,7 +60,7 @@
   <!-- call for models -->
   <div class="model-call">
     <img src="" alt="background">
-    <h3 > Become a model message <span><button href="">Become a model</button></span></h3>
+    <h3 class="model_message"> Become a model message <span><button href="{{url_for('models')}}">Become a model</button></span></h3>
   </div>
   <!-- Call to social action -->
   <div class="social">

@@ -23,5 +23,11 @@ def about():
 @app.route("/contact_us")
 def contact():
     return render_template("contact.html")
+
+@app.route("/become_a_model")
+def models():
+    return render_template("model.html")
+
+
 if __name__ == '__main__':
     app.run(debug=True)

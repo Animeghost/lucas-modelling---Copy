@@ -68,8 +68,10 @@ h3 .status {
 }
 /* for the carousel-item image */
 .carousel-item img{
-    width: 100%;
-    /*width: 720px; /*change the size of the image*/
+    /* width: 100%; */
+    /* margin: 1% 4% 0% 5%; */
+    height: 800px;
+    width: 700px; /*change the size of the image
     /* position: relative;
     left: 360;change the position of the image */
 }
@@ -82,7 +84,7 @@ img{
 .model-call{
     margin-top: auto;
     height: 768px;
-    background-image:url(angelina_jolie_maleficent-1366x768.jpg);
+    
 }
 
 .social{
@@ -97,4 +99,17 @@ img{
 
 .social i:hover{
     color: rgb(238, 204, 9);
+}
+
+/* About us */
+.aboutUs {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.about h3{
+    text-align: left;
+    position: relative;
+    left: 15%;
+    width: 70%;
 }
