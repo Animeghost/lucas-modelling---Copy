@@ -26,8 +26,11 @@ def contact():
 
 @app.route("/become_a_model")
 def models():
-    return render_template("model.html")
+    return render_template("becomeamodel.html")
 
-
+@app.route("/models")
+def model():
+    return render_template("newmodel.html")
+    
 if __name__ == '__main__':
     app.run(debug=True)
