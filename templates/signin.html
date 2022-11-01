@@ -1,0 +1,17 @@
+{%include "header.html"%}
+
+<form id="contactForm" action="mailto: juvinile@example.com" method="post" >
+    <div class="form-floating">
+        <input class="form-control" id="name" type="text" placeholder="Enter your name..." name="name"/>
+        <label for="name">Name</label>
+        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+    </div>
+    <div class="form-floating">
+        <input class="form-control" id="email" type="email" placeholder="Enter your email..." name="email" />
+        <label for="email">Email address</label>
+        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+    </div>
+    <button type="submit">submit</button>
+
+

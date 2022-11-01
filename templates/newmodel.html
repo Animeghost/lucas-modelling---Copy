@@ -6,26 +6,16 @@
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <!-- start for loop here -->
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="{{url_for('static',filename='img/Black_girl.jpg')}}" alt="">
-
-            <div class="card-body">
-              <a href="">Random girl</a>
-            </div>
-          </div>
-
-        </div>
-        <!-- endfor loop -->
-        <div class="col">
-          <div class="card shadow-sm">
-            
-            <img  src="{{url_for('static',filename='img/ntishor.jpg')}}"  alt="...">
-
-            <div class="card-body">
-             <a href=""> Ntishor</a>
-          </div>
-       
-        </div>
-        </div>
         
+        {% for model in model_list%}
+        <div class="col">
+          <div class="card shadow-sm">
+            {%for name in image%}
+            <img width="auto" height="auto" src="static\\img\\model\\{{model}}\\{{name}}" alt="">
+            {%endfor%}
+            <div class="card-body">
+             <a href="{{url_for('template',name=model)}}"> {{model}}</a>
+          </div>
+          </div>
+        </div>
+          {%endfor%}

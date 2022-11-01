@@ -1,0 +1,36 @@
+
+
+
+{%include "header.html"%}
+
+<div>
+    <div>
+        <div class="main image">  
+            <img width="720px" src="static\\img\\model\\{{model}}\\{{image[0]}}" alt="Random">
+            <h1>{{model_details.model_name}}</h1>
+        </div>
+
+        <div class="measurements">
+            <h2>Measurements  </h2>
+            <h4>Height    {{model_details.height}} cm</h4>
+            <h4>Weight {{model_details.weight}}kg</h4>
+            <h4>Bust    {{model_details.bust}}cm</h4>
+            <h4>Waist {{model_details.waist}}cm</h4>
+            <h4>Hips {{model_details.hips}}cm</h4>
+            <h4>Trouser length {{model_details.trouser_length}}cm</h4>
+            <h4>Shoe size  {{model_details.shoe_size}}cm</h4>
+        </div>
+        
+        <div class="portraits">
+        {% for name in image %}
+            <img width="240px" src="static\\img\\model\\{{model}}\\{{name}}" alt="rando">
+        {%endfor%}
+        </div>
+        
+        <div>
+            <a href="http://"><i class="fa-brands fa-instagram fa-2xl"></i> Instagram</a>
+        </div>
+    </div>
+</div>
+
+
