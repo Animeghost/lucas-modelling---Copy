@@ -22,55 +22,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 Base=declarative_base()
 
-# login_manager=LoginManager()
-# login_manager.init_app(app)
-
-# #CREATE DATABASES
-
-# class User(UserMixin,db.Model,Base):
-#     __tablename__ ="user"
-#     id = db.Column(db.Integer, primary_key=True)
-#     name=db.Column(db.String(250), nullable=False)
-#     email=db.Column(db.String(250), unique=True,nullable=False)
-#     password=db.Column(db.String(200),nullable=False)
-#     posts=relationship("BlogPost",back_populates='author')#posts #parent of blogpost fills author field
-#     comments=relationship("Comments",back_populates='author')#comments
-
-#     def __repr__(self):
-#         return f'<User {self.name}>'
-
-#     def check_password(self,password):
-#         self.password_hash=generate_password_hash(password=password,method="pbkdf2:sha256",salt_length=16)
-#         return check_password_hash(pwhash=self.password_hash,password= password)
-
-# class BlogPost(db.Model,Base):
-#     __tablename__ = "blog_posts"
-#     id = db.Column(db.Integer, primary_key=True)
-#     author =relationship("User",back_populates='posts')#author is a user object
-#     title = db.Column(db.String(250), unique=True, nullable=False)
-#     subtitle = db.Column(db.String(250), nullable=False)
-#     date = db.Column(db.String(250), nullable=False)
-#     body = db.Column(db.Text, nullable=False)
-#     img_url = db.Column(db.String(250), nullable=False)
-#     author_id=db.Column(db.Integer,db.ForeignKey('user.id'))#get user id
-#     comments=relationship("Comments",back_populates='parent_post')#parent of comment class 
-
-    # def __repr__(self):
-    #     return f'<User {self.author}>'
-
-# class Comments(db.Model,Base):
-#     __tablename__ = "comments"
-#     id = db.Column(db.Integer, primary_key=True)
-#     author =relationship("User",back_populates='comments')#gets author user object
-#     author_id=db.Column(db.Integer,db.ForeignKey('user.id'))#gets user_id
-#     parent_post=relationship("BlogPost",back_populates='comments')#gets blog_post objects
-#     post_id=db.Column(db.Integer,db.ForeignKey('blog_posts.id'))#gets blog_post id
-#     text=db.Column(db.Text)#gets comment text
-#     date = db.Column(db.String(250), nullable=False)
-
-#     def __repr__(self):
-#         return f'<User {self.author}>'
-# db.create_all()
 
 class Admin(db.Model):
     __tablename__="admin"
